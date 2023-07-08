@@ -1,0 +1,144 @@
+.burgerContainer {
+  display: none;
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 25px;
+  height: 3px;
+  background-color: #e62b1e;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-7px, 5px);
+  transform: rotate(-45deg) translate(-7px, 5px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-10px, -10px);
+  transform: rotate(45deg) translate(-7px, -7px);
+}
+
+.logo img {
+  width: 150px;
+}
+
+.header-title {
+  color: #ffffff;
+  font-size: 32px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 0 1rem; */
+}
+
+.nav-toggler {
+  display: block;
+  color: #e62b1e;
+  font-size: 20px;
+  background: transparent;
+  border: none;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+
+a.active {
+  background: #e62b1e;
+  transition: 0.5s;
+}
+
+@media (min-width: 1024px) {
+
+  .nav-brand img {
+    width: 180px;
+    line-height: 75px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .burgerContainer {
+    display: block;
+    /* position: absolute; */
+    right: 0;
+  }
+  .logo img {
+    width: 100px;
+  }
+
+  .block {
+    margin-top: 6em;
+  }
+  .underly-text {
+    width: 100%;
+  }
+
+  .nav-menu {
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 5em;
+    left: 0;
+    background: #000000;
+    border-radius: 8px;
+    /* transform:translate(-50%, -50%);  */
+  }
+
+  .open {
+    display: block;
+  }
+
+  .nav-menu ul {
+    display: block;
+    /* width: 95%; */
+    /* background: #853131; */
+    /* positi on: absolute; */
+    /* top:50%;  */
+    /* left:50%;  */
+    /* transform:translate(-50%, -50%);  */
+  }
+
+  .nav-menu ul li {
+    height: 70px;
+    border-bottom: 0.2px solid rgba(255, 255, 255, 0.233);
+    margin: 0;
+    /* margin-left: 1em; */
+  }
+
+  .nav-menu ul li:last-child {
+    border-bottom: none;
+  }
+
+  .nav-menu ul li a {
+    margin-left: 1em;
+    font-size: 16px;
+  }
+}

@@ -1,1 +1,1 @@
-# TEDxFUTA
+# This repo contains the source code for the 2023 TEDxFUTA event website.

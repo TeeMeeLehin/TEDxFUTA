@@ -1,0 +1,20 @@
+@import "./base.css";
+
+@import "./navbar.css";
+@import "./footer.css";
+
+.image-sk img{
+    width: 100%;
+}
+
+.image-sk{
+    width: 200px;
+    height: 200px;
+}
+
+@media (min-width: 1024px){
+    .image-sk{
+        width: 250px;
+        height: 250px;
+    }
+}

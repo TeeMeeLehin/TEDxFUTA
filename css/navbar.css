@@ -40,9 +40,10 @@ nav {
   display: flex;
   flex-direction: row;
   height: 80px;
+  width: 100%;
   align-items: center;
   justify-content: space-between;
-  /* padding: 0 1rem; */
+  padding: 0 1rem;
 }
 
 .nav-toggler {

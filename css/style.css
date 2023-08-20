@@ -68,9 +68,9 @@
 
 .underly-text {
   margin-top: 1rem;
-  font-size: 20px;
+  font-size: 14px;
   width: 80%;
-  line-height: 30px;
+  line-height: 24px;
   font-weight: 600;
   display: flex;
   flex-direction: column;
@@ -157,24 +157,57 @@
 
 .grid-partake {
   border: 1px solid #ccc;
-  padding: 10px 10px;
+  padding: 32px 16px;
   text-align: center;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  -moz-transition-duration: .3s;
+    -webkit-transition-duration: .3s;
+    -o-transition-duration: .3s;
+    transition-duration: .3s;
+}
+.grid-partake:hover{
+  background: #fff;
+  -webkit-box-shadow: 0 0 16px rgba(68,67,73,.2);
+  -moz-box-shadow: 0 0 16px rgba(68,67,73,.2);
+  box-shadow: 0 0 16px rgba(68,67,73,.2);
+  border-radius: 16px;
 }
 
 .grid-partake img {
   margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   width: 60px;
 }
 
 .red-text {
-  color: #e62b1e;
-  font-size: 24px;
   font-weight: bold;
+  border: 2px solid #e62b1e;
+  outline: none;
+  font-size: 20px;
+  border-radius: 16px;
+  padding: 8px 16px;
+  text-decoration: unset;
+}
+.red-text a{
+  color: #e62b1e;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  text-decoration: unset;
+}
+.red-text a> span{
+  padding: 10px 0px 10px 8px;
+}
+.red-text a> i{
+  padding: 8px;
+  color: white;
+  background: #e62b1e;
+  border-radius: 100%;
 }
 
 .text-block {
@@ -429,7 +462,7 @@
   }
 
   .partake-grid-container {
-    margin-top: 20px;
+    margin-top: 40px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;

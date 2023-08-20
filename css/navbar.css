@@ -34,8 +34,12 @@
 .header-title {
   color: #ffffff;
   font-size: 32px;
+  text-align: center;
 }
-
+.header-title span{
+  color: #e62b1e;
+  font-size: 64px;
+}
 nav {
   display: flex;
   flex-direction: row;

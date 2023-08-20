@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>TEDxFUTA | Welcome</title>
   </head>
   <body>
@@ -33,13 +34,39 @@
       </nav>
       <div class="header-content">
         <div class="block">
-          <h2 class="header-title">WELCOME TO THE <br><span>PERCEPTION</span></h2>
+          <!--<h2 class="header-title">WELCOME TO THE <br><span>PERCEPTION</span></h2>-->
+          <div class="theme"><img src="new_images/percep.png" alt="PERCEPTION"></div>
           <p class="underly-text">
-            TEDxFUTA is an annual TEDx conference that takes place on the FUTA campus. It brings together some of the brightest thinkers and speakers in the country to explore ideas and topics that spark discussions and ignite ideas that will help shape the future.
+            Gain a new outlook on the world as we delve into the intricate interplay between perception and reality. 
+            Join us in fostering open minds, embracing diversity, and igniting critical thinking for a brighter tomorrow.
           </p>
         </div>
+        <div class="event-deets">
+          <p>
+            <i class='fas fa-calendar-alt' style='font-size:24px; color:red'></i>  SEPTEMBER 23, 2023 &emsp;
+            <i class='fas fa-map-marker-alt' style='font-size:24px; color:red'></i> T.I Francis Auditorium, FUTA
+          </p>
+        </div>
+        <div class="countdown">
+          <div class="countdown-item">
+            <span class="countdown-value" id="days">00</span>
+            <span class="countdown-label">Days</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-value" id="hours">00</span>
+            <span class="countdown-label">Hours</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-value" id="minutes">00</span>
+            <span class="countdown-label">Minutes</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-value" id="seconds">00</span>
+            <span class="countdown-label">Seconds</span>
+          </div>
+        </div>
         <div class="hero-button">
-          <button><a href="about.html">More About TEDxFUTA</a></button>
+          <button><a href="pricing.html">Get Your Ticket</a></button>
         </div>
       </div>
     </div>
@@ -276,5 +303,6 @@
       </div>
     </footer>
     <script src="js/main.js"></script>
+    <script src="js/countdown.js"></script>
   </body>
 </html>

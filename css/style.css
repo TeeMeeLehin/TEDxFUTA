@@ -2,6 +2,10 @@
 @import "./navbar.css";
 @import "./footer.css";
 
+html, body {
+  width: 100%;
+}
+
 .header {
   width: 100%;
   display: flex;
@@ -48,18 +52,19 @@
 }
 
 .event-deets {
-  padding: 20px 10px;
-  font-size: 24px;
+  padding: 25px 5px;
+  font-size: 20px;
   font-weight: bold;
+  width: 100%;
 }
 
 .countdown {
+  width: 100%;
   padding: 20px;
-  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
 }
 

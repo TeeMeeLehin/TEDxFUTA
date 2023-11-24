@@ -2,7 +2,7 @@ const eventDate = new Date("September 23, 2023 10:00:00").getTime();
 
 const updateCountdown = () => {
   const now = new Date().getTime();
-  const timeRemaining = eventDate - now;
+  const timeRemaining = now - now;
 
   const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
   const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
